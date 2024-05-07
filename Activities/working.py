@@ -35,21 +35,28 @@ can_radius = [6.83, 7.78, 8.73, 10.32, 10.79, 13.02, 5.40, 6.83, 15.72, 7.62, 8.
 can_height = [10.16, 11.91, 11.59, 11.91, 17.78, 14.29, 8.89, 7.62, 17.78, 12.38, 11.27, 11.11]
 can_cost = [0.28, 0.43, 0.45, 0.61, 0.86, 0.83, 0.22, 0.26, 1.53, 0.34, 0.38, 0.42]
 """
-def main():
-    print(f'For #1 Picnic The volume is {compute_volume(6.83, 10.16):.2f} and the suface aree is {compute_surface_area(6.83, 10.16):.2f}')
-    print(f'For #1 Tall The volume is {compute_volume(7.78, 11.91):.2f} and the suface aree is {compute_surface_area(7.78, 11.91):.2f}')
+# def main():
+#     print(f'For #1 Picnic The volume is {compute_volume(6.83, 10.16):.2f} and the suface aree is {compute_surface_area(6.83, 10.16):.2f}')
+#     print(f'For #1 Tall The volume is {compute_volume(7.78, 11.91):.2f} and the suface aree is {compute_surface_area(7.78, 11.91):.2f}')
 
-def compute_volume(radius, height):
-    volume = math.pi * (radius ** 2) * height
-    return volume
+# def compute_volume(radius, height):
+#     volume = math.pi * (radius ** 2) * height
+#     return volume
 
-def compute_surface_area(radius, height):
-    surface_area = (2 * math.pi) * radius * (radius + height)
-    return surface_area
+# def compute_surface_area(radius, height):
+#     surface_area = (2 * math.pi) * radius * (radius + height)
+#     return surface_area
 
-main()
+# main()
 
 
+
+def cels_from_fahr(fahr):
+    """Convert a temperature in Fahrenheit to
+    Celsius and return the Celsius temperature.
+    """
+    cels = (fahr - 32) * 5 / 9
+    return cels
 
 
 
