@@ -27,16 +27,27 @@ def test_make_full_name():
     """
     # full_name = make_full_name ("Tina", "Brown")
     assert make_full_name(' Tina', 'Brown') == "Brown; Tina"
+    assert make_full_name(' Demetrious', 'Shoniwa') == "Shoniwa; Demetrious"
+    assert make_full_name(' Nancy', 'Nyamasvi') == "Nyamasvi; Nancy"
+    assert make_full_name(' Tamie', 'Chiwala') == "Chiwala; Tamie"
    
 def test_extract_family_name():
     """ parameters: None
     test extract_family_name function here: write assert statements to test the value returned
     """  
+    assert extract_family_name('Brown; Tina') == 'Brown'
+    assert extract_family_name('Shoniwa; Demetrious') == 'Shoniwa'
+    assert extract_family_name('Nyamasvi; Nancy') == 'Nyamasvi'
+    assert extract_family_name('Chiwala; Tamie') == 'Chiwala'
    
 def test_extract_given_name():
     """ parameters: None
     test extract_given_name function here: write assert statements to test the value returned
     """  
+    assert extract_given_name('Brown; Tina') == 'Tina' 
+    assert extract_given_name('Shoniwa; Demetrious') == 'Demetrious'
+    assert extract_given_name('Nyamasvi; Nancy') == 'Nancy'
+    assert extract_given_name('Chiwala; Tamie') == 'Tamie'
    
    
 """ bottom of test_names.py file, write a call the the py.main function use this example: pytest.main(["-v", "--tb=line", "-rN", __file__]) """
