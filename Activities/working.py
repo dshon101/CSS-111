@@ -62,6 +62,3 @@ def cels_from_fahr(fahr):
 
 
 
-
-
-
